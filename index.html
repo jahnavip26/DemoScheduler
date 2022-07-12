@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Scheduler</title>
+    <script src="https://kit.fontawesome.com/01663f6af4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-bg">
+        <div class="inner-bg">
+   <header>
+        <div class="flex-container">
+            <div class="flex-logo">
+                <span class="logo-circle">
+
+                </span>
+                <h2 class="logo-text">Orix Lesson.</h2>
+            </div>
+            <div class="flex-search">
+
+                <form action="" class="search-bar">
+                    
+                    <input type="text" placeholder="Search" name="q">
+                </form>
+
+            </div>
+            <div class="flex-menu">
+
+                <span class="menu-icons" id="menuicon1">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+                </span>
+                <span class="menu-icons" id="menuicon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 32V49.88C328.5 61.39 384 124.2 384 200V233.4C384 278.8 399.5 322.9 427.8 358.4L442.7 377C448.5 384.2 449.6 394.1 445.6 402.4C441.6 410.7 433.2 416 424 416H24C14.77 416 6.365 410.7 2.369 402.4C-1.628 394.1-.504 384.2 5.26 377L20.17 358.4C48.54 322.9 64 278.8 64 233.4V200C64 124.2 119.5 61.39 192 49.88V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32V32zM216 96C158.6 96 112 142.6 112 200V233.4C112 281.3 98.12 328 72.31 368H375.7C349.9 328 336 281.3 336 233.4V200C336 142.6 289.4 96 232 96H216zM288 448C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288z"/></svg>
+                </span>
+                <span class="menu-icons" id="menuicon3">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 496.158 496.158" style="enable-background:new 0 0 496.158 496.158;" xml:space="preserve">
+                        <path style="fill:#337180;" d="M496.158,248.085c0-137.022-111.07-248.082-248.076-248.082C111.07,0.003,0,111.063,0,248.085  c0,137.001,111.07,248.07,248.082,248.07C385.088,496.155,496.158,385.086,496.158,248.085z"/>
+                        <path style="fill:#1D1D1E;" d="M248.082,496.155c70.204,0,133.589-29.171,178.719-76.042c-2.755-15.131-5.644-28.901-8.284-37.38  c-8.494-27.279-81.197-49.333-170.825-49.333S86.133,355.454,77.64,382.733c-2.64,8.479-5.529,22.247-8.283,37.377  C114.486,466.983,177.874,496.155,248.082,496.155z"/>
+                        <g>
+                            <path style="fill:#D4D6D8;" d="M248.155,474.412c17.688,0,37.756-139,37.756-139l-38.123,26.74l-37.543-26.74   C210.245,335.412,230.467,474.412,248.155,474.412z"/>
+                            <polygon style="fill:#D4D6D8;" points="210.167,335.412 247.787,363.485 285.991,335.412 287.852,322.246 247.829,316.996    208.306,322.246  "/>
+                        </g>
+                        <path style="fill:#E2A379;" d="M286.969,282.118h-77.78c12.136,36.588,0.978,53.294,0.978,53.294l26.912,6.063h22l26.912-6.062  C285.991,335.412,274.833,318.706,286.969,282.118z"/>
+                        <g>
+                            <polygon style="fill:#F3FAFF;" points="282.079,358.746 287.852,322.246 305.745,337.792  "/>
+                            <polygon style="fill:#F3FAFF;" points="214.079,358.746 208.306,322.246 190.412,337.792  "/>
+                            <path style="fill:#F3FAFF;" d="M305.745,337.792l-17.893-15.547l-39.794,19.229c0,0,34.03,17.28,34.198,17.113L305.745,337.792z"/>
+                            <path style="fill:#F3FAFF;" d="M190.412,337.792l17.894-15.547l39.753,19.229c0,0-33.989,17.28-34.157,17.113L190.412,337.792z"/>
+                        </g>
+                        <g>
+                            <polygon style="fill:#86B4D1;" points="248.048,341.475 232.329,349.417 248.048,375.017 263.767,349.417  "/>
+                            <path style="fill:#86B4D1;" d="M248.155,474.412c5.087,0,10.371-11.511,15.318-27.895l-11.363-84.605h-8.141l-11.263,84.289   C237.7,462.758,243.034,474.412,248.155,474.412z"/>
+                        </g>
+                        <g>
+                            <path style="fill:#4A4A54;" d="M196.579,332.371l-12.5,6.438l8,55.27l16.334-3.667l-12,14.667l51.666,84.416l-0.021-15.083   c0,0-33.989-115.657-34.157-115.824L196.579,332.371z"/>
+                            <path style="fill:#4A4A54;" d="M299.579,332.371l12.5,6.438l-8,55.27l-16.333-3.667l12,14.667l-51.667,84.416l0.021-15.083   c0,0,33.989-115.657,34.156-115.824L299.579,332.371z"/>
+                        </g>
+                        <path style="fill:#F4B382;" d="M336.332,175.175c0-92.429-39.513-113.596-88.252-113.596c-48.741,0-88.254,21.167-88.254,113.596  c0,31.266,6.19,55.765,15.462,74.673c20.396,41.598,55.7,56.136,72.792,56.136s52.396-14.538,72.79-56.136  C330.141,230.94,336.332,206.441,336.332,175.175z"/>
+                        <path style="fill:#D89364;" d="M274.078,265.236c0,2.296-11.64,8.578-25.999,8.578s-25.999-6.281-25.999-8.578  c0-1.415,8.251-5.467,13.796-6.218c3.461-0.469,12.203,2.579,12.203,2.579s8.621-3.056,12.055-2.599  C265.762,259.746,274.078,265.236,274.078,265.236z"/>
+                        <path style="fill:#CE8757;" d="M274.078,265.236c0,2.296-11.64,11.177-25.999,11.177s-25.999-8.88-25.999-11.177  c0,0,10.591,1.146,25.999,1.146S274.078,265.236,274.078,265.236z"/>
+                        <path style="fill:#F4B382;" d="M170.413,238.639c-8.439,1.443-14.352,0.148-19.112-27.698s1.657-31.479,10.096-32.922  L170.413,238.639z"/>
+                        <g>
+                            <path style="fill:#141414;" d="M336.332,178.246c11.414-22.762,8.423-43.121,2.747-56.5c-9.333-22-21.117-28.587-21.117-28.587   c-7.551-24.748-41.44-33.08-69.882-33.08c-48.741,0-95.001,25.738-88.254,118.167l20.253-3.417c0-14.75,111.385-43.75,122-56.75   c0,26,4,38,14.099,56.75L336.332,178.246z"/>
+                            <path style="fill:#141414;" d="M165.454,140.767c-4.25,10.875-5.628,24.359-5.628,37.479c0,0,8.753-1.917,8.753,2.583l2.75,27.625   l3.875-1.875c-0.25-23,4.875-31.75,4.875-31.75L165.454,140.767z"/>
+                        </g>
+                        <path style="fill:#F4B382;" d="M325.845,238.639c8.438,1.443,14.35,0.148,19.111-27.698s-1.658-31.479-10.096-32.922  L325.845,238.639z"/>
+                        <path style="fill:#141414;" d="M330.803,140.767c4.25,10.875,5.628,24.359,5.628,37.479c0,0-8.753-1.917-8.753,2.583l-2.75,27.625  l-3.875-1.875c0.25-23-4.875-31.75-4.875-31.75L330.803,140.767z"/>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        </svg> 
+
+                        <!-- <img src="images/man.svg" alt="user-icon" class="man-icon"> -->
+                </span>
+                
+
+
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="main-body">
+
+        <div class="left-pane">
+
+            <div class="overview-card">
+
+                <div class="overview">
+                    <p>Overview</p>
+                </div>
+        
+                <p class="overview-texts" id="text1">Lessons</p>
+                <img src="images/file-regular (1).png" alt="page-icon" class="overview-icons" id="icon1">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z"></svg> -- > -->
+                <p class="overview-texts" id="text2">Transactions</p>
+                <img src="images/coins-solid (1).png" alt="coin-icon" class="overview-icons" id="icon2">
+                <p class="overview-texts" id="text3">Community</p>
+                <img src="images/message-regular (1).png" alt="msg-icon" class="overview-icons" id="icon3">
+                <p class="overview-texts" id="text4">Accounts</p>
+                <img src="images/user-regular.png" alt="user-icon" class="overview-icons" id="icon4">
+        
+            </div>
+        
+            <div class="upgrade-card">
+
+                <span class="circle">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"/></svg>
+
+                </span>
+        
+                <p class="upgrade-texts" id="utext1"><strong>Upgrade Plan</strong></p>
+                <p class="upgrade-texts" id="utext2">Become a <strong>Pro</strong> memeber today you will get more <strong>options</strong></p>
+        
+                <div class="see-plan">
+                    <p>See Plan</p>
+                </div>
+                
+                
+            </div>
+        
+            <div class="logout-card">
+
+                <span class="small-circle">
+
+                    <img src="images/arrow-right-from-bracket-solid (1).png" alt="logout" class="log">
+                    
+
+                </span>
+        
+                <p class="ltext">Log out</p>
+                
+            </div>
+        
+
+        </div>
+
+        <div class="middle-pane">
+            <span class="middlepane-heading">
+                <h1>Today's Lessons </h1>
+                <p> February 01</p>
+            </span>
+            
+            <h2>Choose Lesson</h2>
+            
+        <div class="middlepane-cards">
+            <div class="write-card">
+
+                <div class="middlecard-icon" id="pencil-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"/></svg>
+                </div>
+
+                <img src="images/pencil-solid.png" alt="img" class="middlecard-imgs" id="pencil-image"> 
+
+                <p class="middlepane-text">Write</p>
+                <p class="middlepane-text">3 exercises</p>
+
+                <button type="button" class="button">
+                    <span class="button__text">Join</span>
+                    
+                </button>
+
+
+            </div>
+
+            <div class="listen-card">
+
+                <div class="middlecard-icon" id="listen-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 287.9l-.0042 112C511.1 444.1 476.1 480 432 480c-26.47 0-48-21.56-48-48.06V304.1C384 277.6 405.5 256 432 256c10.83 0 20.91 2.723 30.3 6.678C449.7 159.1 362.1 80.13 256 80.13S62.29 159.1 49.7 262.7C59.09 258.7 69.17 256 80 256C106.5 256 128 277.6 128 304.1v127.9C128 458.4 106.5 480 80 480c-44.11 0-79.1-35.88-79.1-80.06L0 288c0-141.2 114.8-256 256-256c140.9 0 255.6 114.5 255.1 255.3C511.1 287.5 511.1 287.7 512 287.9z"/></svg>
+                </div>
+
+                <img src="images/headphones-solid.png" alt="img" class="middlecard-imgs"> 
+
+                <p class="middlepane-text">Listen</p>
+                <p class="middlepane-text">5 podcasts</p>
+
+                <button type="button" class="button">
+                    <span class="button__text">Join</span>
+                    
+                </button>
+
+
+            </div>
+
+            <div class="speak-card">
+
+                <div class="middlecard-icon" id="speak-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 352c53.03 0 96-42.97 96-96v-160c0-53.03-42.97-96-96-96s-96 42.97-96 96v160C96 309 138.1 352 192 352zM344 192C330.7 192 320 202.7 320 215.1V256c0 73.33-61.97 132.4-136.3 127.7c-66.08-4.169-119.7-66.59-119.7-132.8L64 215.1C64 202.7 53.25 192 40 192S16 202.7 16 215.1v32.15c0 89.66 63.97 169.6 152 181.7V464H128c-18.19 0-32.84 15.18-31.96 33.57C96.43 505.8 103.8 512 112 512h160c8.222 0 15.57-6.216 15.96-14.43C288.8 479.2 274.2 464 256 464h-40v-33.77C301.7 418.5 368 344.9 368 256V215.1C368 202.7 357.3 192 344 192z"/></svg>
+                </div>
+
+                <img src="images/microphone-solid.png" alt="img" class="middlecard-imgs" id="speaker-image"> 
+
+                <p class="middlepane-text">Speak</p>
+                <p class="middlepane-text">4 conversations</p>
+
+                <button type="button" class="button">
+                    <span class="button__text">Join</span>
+                    
+                </button>
+
+
+            </div>
+
+            <div class="more-card">
+
+                <div class="more-icon">
+
+                    <h2> > </h2> 
+
+                </div>
+
+                <p id="more-text">More</p>
+               
+            
+
+
+            </div>
+        </div>
+
+            <h3>Daily Routine</h3>
+
+        </div>
+
+        <div class="middlepane-footer">
+            
+        </div>
+
+        <div class="right-pane">
+
+            <!-- <p>Design Class</p>
+            <p>Classroom interaction, classroom behavior Describes</p> -->
+
+            <!-- <span class="calender-icon">
+                <i class="fa-regular fa-calendar-days"></i>-->
+               <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z"/></svg>
+            </span> --> 
+
+            <div class="leftHeading">
+                <h1 class="mainHeader"><span class="mainHeaderFistPart">Design</span> Class</h1>
+                  <p class="p1">Classroom interaction, classroom behaviour</p>
+                  <p class="p2">Describe</p>
+                </div>
+                <div class="leftSectionBody">
+                  <div class="tab firstTab">
+                    <div class="icon">
+                      <img src="images/calendar-days-solid.png" alt="calendar" class="tabicon">
+                    </div>
+                    <div class="textBar">
+                      <p class="firstLine">November 1.2020</p>
+                      <p class="secondLine"><strong>08:00 - 14:30</strong></p>
+                    </div>
+                  </div>
+                  <div class="tab secondTab">
+                    <div class="icon">
+                        <img src="images/map-location-dot-solid.png" alt="location" class="tabicon">
+                    </div>
+                    <div class="textBar">
+                      <p class="firstLine">Location</p>
+                      <p class="secondLine"><strong>Orix HQ</strong></p>
+                    </div>
+                  </div>
+                  <div class="tab thirdTab">
+                    <div class="icon">
+                        <img src="images/link-solid.png" alt="link" class="tabicon">
+                    </div>
+                    <div class="textBar">
+                      <p class="firstLine">Shareable link</p>
+                      <p class="secondLine"><strong>Only Classmates</strong></p>
+                    </div>
+                  </div>
+                  <div class="tab fourthTab">
+                    <div class="icon">
+                        <img src="images/dollar-sign-solid.png" alt="calendar" class="tabicon">
+                    </div>
+                    <div class="textBar">
+                      <p class="firstLine">Class cost</p>
+                      <p class="secondLine"><strong>$ 450.00</strong></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="leftSectionFooter">
+                  <p class="footerHeading"><strong>Your Classmates</strong></p>
+                  <div class="icons">
+                    <img src="images/man (1).png" alt="" class="profileicons" id="profileicon1">
+                    <img src="images/man.png" alt="" class="profileicons" id="profileicon2">
+                    <img src="images/woman.png" alt="" class="profileicons" id="profileicon3">
+                    <img src="images/profile.png" alt="" class="profileicons" id="profileicon4">
+                  </div>
+                  <div class="buttons">
+                    <button class="primaryBtn">Join a Class</button>
+                    <button class="secondaryBtn">Reschedule</button>
+                  </div>
+                </div>
+
+            
+
+        </div>
+
+    </div>
+</div>
+    
+</div>
+</body>
+</html>
