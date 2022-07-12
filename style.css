@@ -1,0 +1,905 @@
+*{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    /* overflow-y: hidden;  */
+}
+
+
+.outer-bg{
+
+
+    background-color: peachpuff;
+}
+
+.inner-bg{
+
+    border-radius: 8%;
+    background-color: white;
+}
+
+
+
+
+
+.flex-container{
+    display: flex;
+    border: none;
+    height: 90px;
+    
+}
+
+.flex-logo{
+    display: flex;
+    background-color: rgb(251, 251, 251);
+    border: none;
+    width: 15%;
+    align-items: flex-start;
+    
+    
+}
+
+.flex-search{
+    background-color: rgb(251, 251, 251);
+    border: none;
+    width: 53%;
+    align-items: center;
+}
+
+.flex-menu{
+    background-color: rgb(252, 250, 250);
+    border: none;
+    width: 33.5%;
+    align-items: flex-end;
+    
+    
+}
+
+.search-bar{
+
+    display: flex;
+}
+
+
+.search-bar input{
+
+    width: 800px;
+    height: 20px;
+    background-color: white;
+    
+    border: 1px solid whitesmoke ;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+    margin-top: 10px;
+    left: 80px;
+    padding: 24px 20px;
+    font-size: 15px;
+    z-index: 10;
+    
+
+}
+
+.main-body{
+
+    display: flex;
+    border: none;
+}
+
+.left-pane{
+
+    border: 1px solid whitesmoke;
+    width: 15%;
+    height: 90vh;
+    z-index: 5;
+    background-color: rgb(251, 251, 251);
+    
+}
+
+.middle-pane{
+
+    display:flex;
+    flex-direction: column;
+    border: none;
+    width: 53%;
+    height: 90vh;
+    background-color: rgb(251, 251, 251);
+   
+}
+
+.right-pane{
+
+    border: none;
+    width: 32%;
+    height: 90vh;
+    background-color:rgb(252, 250, 250);
+}
+
+.overview-card{
+
+    background-color: whitesmoke;
+    width: 180px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.overview{
+
+    display: flex;
+    background-color: #f89e77;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8%;
+    left: 10%;
+    z-index: 10;
+    font-size: 18px;
+    color: white;
+    
+    
+
+    
+}
+
+.upgrade-card{
+
+    background-color: whitesmoke;
+    width: 180px;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+
+    
+}
+
+.see-plan{
+
+    display: flex;
+    background-color: #f89e77;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 72%;
+    left: 15%;
+    color: white;
+
+}
+
+.logout-card{
+
+    display: flex;
+    background-color: whitesmoke;
+    width: 160px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 43%;
+    left: 10%;
+    
+    
+    
+}
+
+.middle-pane{
+
+    display: flex;
+}
+
+.middlepane-heading{
+
+    display: flex;
+    align-items: center;
+    justify-items:center;
+
+}
+
+.middlepane-heading h1{
+  position: absolute;
+  top: 15%;
+  margin-left: 10px;
+  
+}
+
+.middlepane-heading p{
+
+  position: absolute;
+  top: 17%;
+  left: 35%;
+
+}
+
+.middle-pane h2{
+  position: absolute;
+  top: 24%;
+  margin-left: 10px;
+}
+
+.middle-pane h3{
+
+  position: absolute;
+  top: 68%;
+  margin-left: 10px;
+}
+
+
+.middlepane-cards{
+
+  display: flex;
+  width: 53%;
+  height: 230px;
+  position: absolute;
+  top: 32%;
+  justify-content: space-between;
+  
+
+
+}
+
+.middlecard-imgs{
+
+  width: 120px;
+  height: 130px;
+  position: absolute;
+  top: 10%;
+  left: 30.5%;
+  opacity: 0.1;
+}
+
+#speaker-image{
+
+  position: absolute;
+  top: 10%;
+  left: 54%;
+  opacity: 0.1;
+}
+
+#pencil-image{
+
+  position: absolute;
+  top: 10%;
+  left:7%;
+  opacity: 0.1;
+}
+
+.button {
+    display: flex;
+    height: 45px;
+    width: 80%;
+    padding: 0;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    top: 55%;
+    left: 10%;
+    
+  }
+  
+  .button:hover {
+    background: black;
+  }
+  
+  .button:active {
+    background: #006e58;
+  }
+  
+  .button__text {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0 24px;
+    color: black;
+    height: 100%;
+    position: relative;
+    left: 15%;
+  }
+
+  /* .middlecard-imgs{
+
+  
+    background-blend-mode: lighten;
+    width: 100px;
+    height: 200px;
+  } */
+  
+
+  .middlecard-icon{
+
+    background-color: whitesmoke;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    margin-left: 20px;
+
+  }
+
+  .middlecard-icon svg{
+
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25%;
+    left: 23%;
+  }
+
+  #pencil-icon svg{
+    fill: rgb(144, 118, 187) ;
+  }
+
+  #listen-icon svg{
+    fill: rgb(209, 111, 156);
+  }
+
+  #speak-icon svg{
+    fill: #ebae3b9c;
+  }
+
+  .write-card{
+    
+    background-image: linear-gradient(to bottom right, rgb(189, 170, 219), rgb(130, 66, 234) );
+    width: 150px;
+    height: 230px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 40px;
+    /* margin-right:20px; */
+     
+
+
+  }
+
+  .middlepane-text{
+
+    color: white;
+    position: relative;
+    top: 40%;
+    left: 7%;
+    font-size: 20px;
+    text-align: left;
+    
+
+
+  }
+
+  .listen-card{
+
+    background-image: linear-gradient(to bottom right, rgb(230, 133, 178), rgb(190, 47, 124) );
+    width: 150px;
+    height: 230px;
+    border-radius: 20px;
+    text-align: center;
+    /* margin-right:20px; */
+    
+  }
+
+  .speak-card{
+
+    background-image: linear-gradient(to bottom right, #fcc55f9c, orange) ;
+    width: 150px;
+    height: 230px;
+    border-radius: 20px;
+    text-align: center;
+    /* margin-right:20px; */
+    
+  }
+
+  .more-card{
+
+    background-color: whitesmoke;
+    width: 150px;
+    height: 160px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    margin-right:40px;
+
+
+  }
+
+  .more-icon{
+     
+    border-radius: 50%;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: gray;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 78%;
+
+  }
+
+  #more-text{
+
+    transform: rotate(270deg);
+    color: gray;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 85%;
+
+  }
+
+  .more-icon h2{
+
+    position: absolute;
+    left: 20%;
+  }
+    
+
+
+.calender-icon{
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(16, 124, 164, 0.363);
+  padding: 10px;
+  border: 5px solid #f5f5f5;
+  outline: 1px solid rgba(16, 124, 164, 0.363);
+  position: relative;
+
+}
+
+ /* svg{
+
+  width: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 35%;
+
+}  */
+
+.overview-icons{
+
+  width: 18px;
+  height: 18px;
+  position:relative;
+  left: 80%;
+
+
+
+}
+
+.overview-texts{
+
+  left: 5%;
+}
+
+#text1{
+
+  position: relative;
+  top: 10%;
+
+
+}
+
+#text2{
+
+  position: relative;
+  top: 11%;
+
+
+}
+
+#text3{
+
+  position: relative;
+  top: 12%;
+
+
+}
+
+#text4{
+
+  position: relative;
+  top: 13%;
+
+
+}
+
+#icon1{
+
+  position: relative;
+  top: 4%;
+  fill: white;
+  
+
+
+}
+
+#icon2{
+
+  position: relative;
+  top: 5%;
+  fill: white;
+
+
+}
+
+#icon3{
+
+  position: relative;
+  top: 6%;
+  fill: white;
+
+
+}
+
+#icon4{
+
+  position: relative;
+  top: 6.8%;
+  fill: white;
+
+
+}
+
+.circle
+{
+ 
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(102, 69, 179);
+  top: 7%;
+  left: 25%;
+  
+    
+  
+
+}
+
+.circle svg{ 
+
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 26%;
+  left: 25%;
+  fill: white;
+  
+}
+
+.upgrade-texts{
+
+  position: absolute;
+  
+
+
+}
+
+#utext1{
+
+  position: absolute;
+  top: 48%;
+  left: 22%;
+
+}
+
+#utext2{
+
+
+  position: absolute;
+  top: 60%;
+  font-size: 12px;
+  color: gray;
+}
+
+strong{
+  color: black;
+}
+
+/* .trophy{
+
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  
+
+
+} */
+
+.small-circle{
+
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f89e77;
+  padding: 10px;
+  border: 2px solid white;
+  outline: 1px solid #f89e77;
+  top: 20%;
+  left: 5%;
+  
+
+}
+
+.ltext{
+
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 33%;
+  left: 42%;
+  font-size: 18px;
+}
+
+.log{
+
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 21%;
+  left: 25%;
+
+}
+
+.logo-circle{
+
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(114, 85, 181);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+
+}
+
+.logo-text{
+
+    font-size: 20px;
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    margin-left: 50px;
+}
+
+.menu-icons svg{
+
+  width: 30px;
+  height: 30px;
+  
+}
+
+#menuicon1{
+
+  position: relative;
+  top: 30%;
+  left: 55%;
+
+}
+
+#menuicon2{
+
+  position: relative;
+  top: 30%;
+  left: 65%;
+
+}
+
+#menuicon3{
+
+  position: relative;
+  top: 30%;
+  left: 75%;
+}
+
+div.right-pane{
+  width: 30%;
+  background-color:rgb(252, 250, 250);
+  padding: 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  
+}
+div.right-pane .leftHeading .mainHeader{
+  font-weight: normal;
+  font-size: 26px;
+  position: absolute;
+  top: 16%;
+
+}
+div.right-pane .leftHeading .mainHeader .mainHeaderFistPart{
+  font-weight: bold;
+}
+div.right-pane .leftHeading .p1{
+  position: absolute;
+  color: #666666;
+  font-size: 12px;
+  top: 22%;
+}
+
+div.right-pane .leftHeading .p2{
+  position: absolute;
+  color: #666666;
+  font-size: 12px;
+  top: 24%;
+}
+
+.leftSectionBody{
+
+  position: absolute;
+  top: 28%;
+}
+
+.leftSectionBody .tab{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.leftSectionBody .tab .icon{
+  width:40px;
+    height:40px;
+    border-radius:50%;
+    padding:10px;
+    border:5px solid #F5F5F5;
+    position: relative;
+}
+
+.tabicon{
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.leftSectionBody .tab.firstTab .icon{
+  margin-bottom: 10px;
+  background-color: rgb(30, 175, 238);
+  outline: 1px solid rgb(86, 193, 239);
+}
+
+.leftSectionBody .tab.secondTab .icon{
+  margin-bottom: 10px;
+  background-color: #f89e77;
+  outline: 1px solid #f89e77;
+}
+
+.leftSectionBody .tab.thirdTab .icon{
+  margin-bottom: 10px;
+  background-color: rgb(244, 124, 124);
+  outline: 1px solid rgb(244, 124, 124);
+}
+
+.leftSectionBody .tab.fourthTab .icon{
+  background-color: rgb(245, 93, 192);
+  outline: 1px solid rgb(245, 93, 192);
+}
+
+.leftSectionBody .icon svg{
+  width: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 34%;
+  left:34%;
+}
+
+.textBar{
+  margin-top: -20px;
+  margin-left: 20px;
+  font-size: 15px;
+  
+}
+
+.leftSectionBody .tab .textBar .firstLine{
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.leftSectionFooter{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  width: 350px;
+  height: 180px;
+  top: 72%;
+  left: 69%;
+}
+.footerHeading{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.icons{
+
+  
+  /* width: 40px;
+  height: 40px; */
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  
+}
+
+.profileicons{
+
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+
+
+#profileicon2{
+margin-left: -15px;
+}
+#profileicon3{
+  /* position: absolute;
+left: 35%; */
+margin-left: -15px;
+}
+#profileicon4{
+  /* position: absolute;
+left: 50%; */
+margin-left: -15px;
+} 
+.leftSectionFooter .buttons{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+
+.leftSectionFooter .buttons .primaryBtn{
+  background-color: #f89e77;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  
+}
+
+.leftSectionFooter .buttons .secondaryBtn{
+  background-color: #ffffff;
+  color: gray;
+  font-size: 15px;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  position: absolute;
+  left: 40%;
+}
+
